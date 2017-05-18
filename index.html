@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+
+		<div id="comments"></div>
+		
+		
+
+		<div class="container">
+			<div id="block-lists"></div>
+		</div>
+
+		<script id="block-template" type="text/x-handlebars-template">
+			{{#each this}}
+				<div class"media">
+					<div class="media-left">
+						<a href="#">
+							<img src="{{ image_url }}" alt="{{ title }}">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">{{ title }}</h4>
+						<div id="block-author-{{ author_id }}">{{ author_name author_id }}</div>
+					</div>
+				</div>
+			{{/each}}
+		</script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+		<script src="assets/js/app.js" ></script>
+	</body>
+</html>

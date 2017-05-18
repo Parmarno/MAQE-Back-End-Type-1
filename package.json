@@ -1,0 +1,16 @@
+{
+  "name": "back end template",
+  "version": "1.0.0",
+  "description": "back end template maqe for front end",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ekkarach Kulwong",
+  "license": "ISC"
+}
